@@ -18,9 +18,12 @@ const auth = firebase.auth();
 const storage = firebase.storage();
 const database = firebase.database();
 
-document.getElementById("submitLog").addEventListener("click",OnSubmit)
 
-function OnSubmit(){
+
+// --------- Login ------- //
+//document.getElementById("submitLog").addEventListener("click",OnSubmitLog)
+
+function OnSubmitLog(){
     email = document.getElementById("email-input").value;
     password = document.getElementById("password-input").value
     
@@ -41,4 +44,41 @@ function RegisterToFB(email,password){
     console.log(errorMessage)
     // ..
   });
+}
+
+// --------- Contact POST ------- //
+document.getElementById("submitContact").addEventListener("click",OnSubmitContact)
+
+function OnSubmitContact(){
+  // Get fields from page
+  firstName = document.getElementById("inputFirstname").value;
+  lastName = document.getElementById("inputLastname").value;
+  phoneNumber = document.getElementById("inputPhone").value;
+  subject = document.getElementById("inputSubject").value;
+  text = document.getElementById("textArea").value;
+  ticket = randomNumber(7);
+
+  // Upload to Firebase
+  database.ref('Tickets/ticket: '+ticket).set({
+    firstName : firstName,
+    lastName : lastName,
+    phoneNumber : phoneNumber,
+    subject : subject,
+    text: text
+  }).catch((error) =>{
+    console.log(error);
+  })
+}
+
+
+
+
+
+
+
+
+
+// --------- Misc ------- //
+function randomNumber(length) {
+  return Math.floor(Math.pow(10, length-1) + Math.random() * (Math.pow(10, length) - Math.pow(10, length-1) - 1));
 }

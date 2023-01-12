@@ -50,7 +50,7 @@
                   <div class="form row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">First Name</label>
-                      <input type="text" class="form-control mb-2" id="inputFirstname" placeholder="First name">
+                      <input type="text" class="form-control mb-3" id="inputFirstname" placeholder="First name">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputPassword4">Last Name</label>
@@ -60,11 +60,15 @@
                   <div class="form ">
                     <div class="form-group">
                       <label for="inputEmail">Email</label>
-                      <input type="email" class="form-control mb-2" id="inputEmail" placeholder="name@example.com">
+                      <input type="email" class="form-control mb-3" id="inputEmail" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPhone">Phone Number</label>
+                      <input type="tel" class="form-control mb-3" id="inputPhone" placeholder="+972527057335">
                     </div>
                     <div class="form-group col-md-5">
                       <label for="inputSubject">Subject</label>
-                      <select id="inputSubject" class="form-control mb-2">
+                      <select id="inputSubject" class="form-control mb-3">
                         <option selected>Choose...</option>
                         <option>Bug Reporting</option>
                         <option>Technical Issue</option>
@@ -72,18 +76,18 @@
                         <option>Other</option>
                       </select>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-12"s>
                       <label for="textArea">Text</label>
-                      <textarea class="form-control mb-2" id="textArea" rows="3"></textarea>
+                      <textarea class="form-control mb-3" id="textArea" rows="3"></textarea>
                     </div>
                   </div>
                   <div class="form-group">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="button" class="btn btn-light" id="submitContact">Submit</button>
                 </form> 
               </div>
               <div class="col my-auto ms-5 d-none d-lg-flex">
-                <img src="mail-icon.svg" alt="" width="300" height="300">
+                <img src="mail-icon.svg" alt="" width="300" height="300" class="img-fluid">
               </div>
             </div>
           </div>
