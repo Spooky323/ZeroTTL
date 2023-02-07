@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroTTL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ZeroTTL</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto" id="navul">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" id="loginbtn">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-4 pt-lg-5 text-center text-sm-start "
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Welcome to <span class="text-warning">ZeroTTL</span></h1>
+            <p class="lead my-4">
+                We focus on bringing the latest innovations to the people. <br>
+            </p>
+            <button
+              class="btn btn-primary btn-lg" c   
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h2 class="mb-2 mb-md-0 col-4">Sign Up For Our Newsletter</h2>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" id="inputNewsletter"/>
+            <button class="btn btn-dark btn-lg" type="button" id="submitNewsletter">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel"><span class="text-warning">Sign in</span></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password-input" required>
+              </div>
+              <div class="mb-3 form-check-inline ">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="RemembermeCheck" value="rememberme">
+                  <label class="form-check-label" for="RemembermeCheck">Remember Me</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="RegisterCheck" value="register">
+                  <label class="form-check-label" for="RegisterCheck">Register</label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="submitLog">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light h-100">
+              <div class="card-body text-center mb-3">
+                <h2> 
+                  <i class="bi bi-lightbulb"></i>
+                </h2>
+                <h4 class="card-title mb-3">
+                  Innovations
+                </h4>
+                <p class="card-text">
+                  Since 2014 ZeroTTL has brought countless Innovations and projects to make the life quality better for the poeple and our customers. ZeroTTL will continue to make
+                  the highest quality products for our customers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light h-100">
+              <div class="card-body text-center mb-3">
+                <h2>
+                  <i class="bi bi-globe-americas"></i>
+                </h2>
+                <h4 class="card-title mb-3">
+                  Expansion
+                </h4>
+                <p class="card-text">
+                  The company currently has 3 branches located in Athena and Israel as the HQ . ZeroTTL will keep expanding over Europe and America in the next few years.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light h-100">
+              <div class="card-body text-center mb-3">
+                <h2> 
+                  <i class="bi bi-person-fill"></i>
+                </h2>
+                <h4 class="card-title mb-3">
+                  Employees
+                </h4>
+                <p class="card-text">
+                  Our company currently hires 150k+ of the most talented people all over around the globe. Including Engineers, Technicians, Designers and Students.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Traffic Light Showcase -->
+    <section class="p-5">
+      <div class="container align-items-center justify-content-between">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/test.jpeg" alt="" width="500" height="400" class="img-fluid">
+          </div>
+          <div class="col-md p-5">
+            <h3> Smart Traffic Light</h3>
+            <p class="lead fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, laudantium.</p>
+            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati odio deleniti, voluptatum accusamus reiciendis amet sunt facere at nesciunt quia eum ipsa, doloremque dignissimos nemo dolor? Repudiandae iure similique voluptas, dolorem dicta illum laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customers -->
+    <section class="p-5">
+      <div class="border border-dark border-2 align-items-center text-center">
+        <h1 class="p-3">Partners</h1>
+        <div class="container mx-auto">
+          <div class="row pb-4">
+            <div class="col">
+              <img src="img/israel-defense.png" alt="" width="150" height="150" class="img-thumbnail img-fluid" >
+            </div>
+            <div class="col">
+              <img src="img/google-logo.svg" alt="" width="150" height="150" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="img/usa-defense.svg" alt="" width="150" height="150" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="img/german-defense.svg" alt="" width="150" height="0" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="img/IAF.png" alt="" width="150" height="0" class="img-thumbnail img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 pb-5 bg-dark text-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h5 class="fw-semibold fs-5 pb-2">The Company</h5>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusantium expedita hic a nisi velit eum, optio dicta? Fuga, minus.</p>
+          </div>
+          <div class="col-md">
+            <h5 class="fw-semibold fs-5 pb-2">Links</h5>
+            <i class="bi bi-caret-right"></i> <a href="">About Us</a> <br>
+            <i class="bi bi-caret-right"></i> Galary
+          </div>
+          <div class="col-md">
+            <h5 class="fw-semibold fs-5 pb-2">Contact Us</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
